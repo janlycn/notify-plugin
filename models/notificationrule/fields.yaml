@@ -4,7 +4,7 @@
 
 fields:
     name:
-        label: Name
+        label: rainlab.notify::lang.notifications.name
         placeholder: New notification rule name
         attributes:
             autofocus: 1
@@ -23,25 +23,25 @@ tabs:
     fields:
         rule_actions:
             type: RainLab\Notify\FormWidgets\ActionBuilder
-            tab: Actions
+            tab: rainlab.notify::lang.action.tab
 
         rule_conditions:
             type: RainLab\Notify\FormWidgets\ConditionBuilder
-            tab: Conditions
+            tab: rainlab.notify::lang.condition.tab
 
         is_enabled:
-            label: Active
+            label: rainlab.notify::lang.setting.is_enabled
             type: checkbox
-            tab: Settings
+            tab: rainlab.notify::lang.setting.tab
             default: true
 
         description:
-            label: Description
+            label: rainlab.notify::lang.setting.description_label
             type: textarea
             size: tiny
-            tab: Settings
+            tab: rainlab.notify::lang.setting.tab
 
         code:
-            label: API Code
+            label: rainlab.notify::lang.setting.api_code
             span: auto
-            tab: Settings
+            tab: rainlab.notify::lang.setting.tab

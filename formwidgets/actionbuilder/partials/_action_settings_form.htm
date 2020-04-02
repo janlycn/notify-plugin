@@ -6,7 +6,7 @@
             <?php if (!$this->fatalError): ?>
                 <?= e($action->getTitle()) ?>
             <?php else: ?>
-                Action
+                <?= e(trans('rainlab.notify::lang.action.label')) ?>
             <?php endif ?>
         </h4>
     </div>
@@ -33,7 +33,7 @@
                 data-hotkey="ctrl+s, cmd+s"
                 data-popup-load-indicator
                 class="btn btn-primary">
-                <u>S</u>ave
+                <?= e(trans('backend::lang.form.save')) ?>
             </button>
 
             <button
