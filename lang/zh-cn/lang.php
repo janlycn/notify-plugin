@@ -12,18 +12,27 @@ return [
         'code' => '编码',
         'notification_rule' => '通知规则',
         'add_notification_rule' => '添加通知规则',
-        'available_tags_label' => '这些变量是可用的：',
-        'available_tags_small' => '单击或将这些内容拖到内容区域',
-        'available_tags_empty' => '此操作不提供任何变量。'
     ],
     'action' => [
         'tab' => '操作',
         'label' => '操作',
         'add_notification_action' => '添加通知操作',
+        'available_tags_label' => '这些变量是可用的：',
+        'available_tags_comment' => '单击或将这些内容拖到内容区域',
+        'available_tags_empty' => '此操作不提供任何变量。',
+        'related_object' => '相关对象',
+        'attribute' => '属性',
+        'operator' => '操作者',
+        'value' => '值'
     ],
     'condition' => [
         'tab' => '条件',
         'label' => '条件',
+        'delete_confirm' => '您真的要删除此条件吗？',
+        'collapse_expand' => '折叠 / 展开',
+        'delete_title' => '删除条件',
+        'add_condition' => '添加条件',
+        'select_placeholder' => '请选择一个条件'
     ],
     'setting' => [
         'tab' => '设置',

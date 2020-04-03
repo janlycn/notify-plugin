@@ -1,6 +1,6 @@
 <?php if ($availableTags): ?>
     <div class="form-preview">
-        <p><?= e(trans('rainlab.notify::lang.notifications.available_tags_label')) ?></p>
+        <p><?= e(trans('rainlab.notify::lang.action.available_tags_label')) ?></p>
         <div class="control-balloon-selector">
             <ul>
                 <?php foreach ($availableTags as $tag => $description): ?>
@@ -14,10 +14,10 @@
                 <?php endforeach ?>
             </ul>
         </div>
-        <div class="small"><em><?= e(trans('rainlab.notify::lang.notifications.available_tags_small')) ?></em></div>
+        <div class="small"><em><?= e(trans('rainlab.notify::lang.action.available_tags_comment')) ?></em></div>
     </div>
 <?php else: ?>
     <div class="form-preview">
-        <div><?= e(trans('rainlab.notify::lang.notifications.available_tags_empty')) ?></div>
+        <div><?= e(trans('rainlab.notify::lang.action.available_tags_empty')) ?></div>
     </div>
 <?php endif ?>

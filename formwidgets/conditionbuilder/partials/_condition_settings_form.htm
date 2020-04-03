@@ -6,7 +6,7 @@
             <?php if (!$this->fatalError): ?>
                 <?= e($condition->getTitle()) ?>
             <?php else: ?>
-                Condition
+                <?= e(trans('rainlab.notify::lang.condition.label')) ?>
             <?php endif ?>
         </h4>
     </div>
@@ -27,7 +27,7 @@
                 data-hotkey="ctrl+s, cmd+s"
                 data-popup-load-indicator
                 class="btn btn-primary">
-                <u>S</u>ave
+                <?= e(trans('backend::lang.form.save')) ?>
             </button>
 
             <button
@@ -43,7 +43,7 @@
                     class="oc-icon-trash-o btn-icon danger pull-left"
                     data-request="<?= $this->getEventHandler('onDeleteCondition') ?>"
                     data-popup-load-indicator
-                    data-request-confirm="Do you really want to delete this condition?">
+                    data-request-confirm="<?= e(trans('rainlab.notify::lang.condition.delete_confirm')) ?>">
                 </button>
             <?php endif ?>
 
